@@ -1,0 +1,7 @@
+Question: Write a JavaScript program to convert a comma-separated value (CSV) string to a 2D array.
+
+বাংলা ব্যাখ্যা: একটি CSV স্ট্রিংকে লাইনে লাইনে ভেঙে এবং প্রতিটি লাইনকে কমা (,) দিয়ে ভাগ করে একটি দ্বিমাত্রিক (2D) অ্যারেতে রূপান্তর করতে হবে।
+
+function csvTo2DArray(data, delimiter = ',') {
+  return data.split('\n').map(row => row.split(delimiter));
+}
